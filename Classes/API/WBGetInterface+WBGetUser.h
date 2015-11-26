@@ -11,6 +11,7 @@
 #import "WBUserModel.h"
 @interface WBGetInterface (WBGetUser)
 
+/** 用户粉丝数，关注数，微博数 */
 typedef struct{
     NSInteger  ids;
     NSInteger private_friends_count;

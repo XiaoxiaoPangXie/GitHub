@@ -5,12 +5,15 @@
 //  Created by Ibokan on 15/11/26.
 //  Copyright (c) 2015年 NSObject. All rights reserved.
 //
-
+/** 
+    搜索接口
+ */
 #import "WBGetInterface.h"
 #import "WBTimeLineModel.h"
 
 @interface WBGetInterface (WBSearch)
 
+/** 学校信息 */
 typedef struct{
     
     NSInteger ID;
@@ -27,6 +30,7 @@ typedef enum: NSUInteger{
     WBSchoolTypePrimarySchool
 }WBSchoolType;
 
+/** 用户信息 */
 typedef struct{
     
     NSInteger uid;
@@ -34,18 +38,21 @@ typedef struct{
     NSInteger followers_count;
 }WBSearchUser;
 
+/** App信息 */
 typedef struct{
     
     NSInteger members_count;
     const char * apps_name;
 }WBSearchApp;
 
+/** 微博信息 */
 typedef struct{
     
     NSInteger count;
     const char * suggestion;
 }WBSearchStatus;
 
+/** @对象信息 */
 typedef struct{
     
     NSInteger uid;
@@ -55,8 +62,8 @@ typedef struct{
 
 typedef enum : NSInteger{
     
-    WBSearchAt_UserTypeAttention = 0,
-    WBSearchAt_UserTypeFollower
+    WBSearchAt_UserTypeAttention = 0, // 关注对象
+    WBSearchAt_UserTypeFollower // 粉丝对象
 }WBSearchAt_UserType;
 #pragma -mark- get
 /** 搜索学校时的联想搜索建议 */

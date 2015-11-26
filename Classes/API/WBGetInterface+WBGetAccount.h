@@ -9,7 +9,7 @@
 #import "WBGetInterface.h"
 
 @interface WBGetInterface (WBGetAccount)
-
+/** 学校类型 */
 typedef enum: NSUInteger{
     WBSchoolTypeCollege = 0,
     WBSchoolTypeHighSchool,
@@ -18,10 +18,11 @@ typedef enum: NSUInteger{
     WBSchoolTypePrimarySchool
 }WBSchoolType;
 
+/** 学校ID和名字 */
 typedef struct{
+    
     NSInteger ID;
     const char * name;
-    
 }WBSchoolData;
 
 /** 获取所有的学校列表 */

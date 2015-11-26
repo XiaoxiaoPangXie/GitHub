@@ -9,18 +9,20 @@
 #import "WBGetInterface.h"
 
 @interface WBGetInterface (WBGetCommon)
-
+/** 地方编码，名称 */
 typedef struct{
     
     NSInteger cityCode;
     const char * cityName;
 }WBCommonCode;
 
+/** 时间表 */
 typedef struct{
     
     NSInteger number;
     const char * timeName;
 }WBCommonTimeCode;
+
 #pragma -mark- Get
 /** 通过地址编码获取地址名称 */
 - (NSArray *)getCommonCode_to_Location:(NSString *)codes;

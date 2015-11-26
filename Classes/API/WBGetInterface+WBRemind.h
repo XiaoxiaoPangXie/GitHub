@@ -12,7 +12,6 @@
 @interface WBGetInterface (WBRemind)
 
 
-
 #pragma -mark- GET
 /** 获取某个用户的各种消息未读数 */
 - (WBRemindModel *)getRemindUnread_Count;
