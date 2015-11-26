@@ -33,49 +33,69 @@ typedef struct{
 
 @property(nonatomic,assign) NSInteger source_allowclick;
 
-@property(nonatomic,assign) NSInteger source_type; // 微博类型，1为原创，2为转发
+/** 微博类型，1为原创，2为转发 */
+@property(nonatomic,assign) NSInteger source_type;
 
 @property(nonatomic,assign) NSInteger * page_type;
 
-@property(nonatomic,copy) NSString * source; // 微博来源
+/** 微博来源 */
+@property(nonatomic,copy) NSString * source;
 
-@property(nonatomic,assign) BOOL favorited; // 是否已收藏，true：是，false：否
+/** 是否已收藏，true：是，false：否 */
+@property(nonatomic,assign) BOOL favorited;
 
-@property(nonatomic,assign) BOOL truncated; // 是否被截断，true：是，false：否
+/** 是否被截断，true：是，false：否 */
+@property(nonatomic,assign) BOOL truncated;
 
-@property(nonatomic,copy) NSString * in_reply_to_status_id; // （暂未支持）回复ID
+/** （暂未支持）回复ID */
+@property(nonatomic,copy) NSString * in_reply_to_status_id;
 
-@property(nonatomic,copy) NSString * in_reply_to_user_id; // (暂未支持）回复人UID
+/** (暂未支持）回复人UID */
+@property(nonatomic,copy) NSString * in_reply_to_user_id;
 
-@property(nonatomic,copy) NSString * in_reply_to_screen_name; // 暂未支持）回复人昵称
+/** （暂未支持）回复人昵称 */
+@property(nonatomic,copy) NSString * in_reply_to_screen_name;
 
-@property(nonatomic,retain) NSArray * pic_urls; // 所以获取缩略图片地址
+/** 所以获取缩略图片地址 */
+@property(nonatomic,retain) NSArray * pic_urls;
 
-@property(nonatomic,copy) NSString * thumbnail_pic; // 缩略图片地址，没有时不返回此字段
+/** 缩略图片地址，没有时不返回此字段 */
+@property(nonatomic,copy) NSString * thumbnail_pic;
 
-@property(nonatomic,copy) NSString * bmiddle_pic; // 中等尺寸图片地址，没有时不返回此字段
+/** 中等尺寸图片地址，没有时不返回此字段 */
+@property(nonatomic,copy) NSString * bmiddle_pic;
 
-@property(nonatomic,copy) NSString * original_pic; // 原始图片地址，没有时不返回此字段
+/** 原始图片地址，没有时不返回此字段 */
+@property(nonatomic,copy) NSString * original_pic;
 
-@property(nonatomic,retain) NSObject * geo; // 地理信息字段 详细
+/** 地理信息字段 详细 */
+@property(nonatomic,retain) NSObject * geo;
 
-@property(nonatomic,retain) WBUserModel * user; // 微博作者的用户信息字段 详细
+/** 微博作者的用户信息字段 详细 */
+@property(nonatomic,retain) WBUserModel * user;
 
-@property(nonatomic,retain) WBTimeLineModel * retweeted_status; // 被转发的原微博信息字段，当该微博为转发微博时返回 详细
+/** 被转发的原微博信息字段，当该微博为转发微博时返回 详细 */
+@property(nonatomic,retain) WBTimeLineModel * retweeted_status;
 
 @property(nonatomic,retain) NSArray * annotations;
 
-@property(nonatomic,assign) NSInteger reposts_count; // 转发数
-    
-@property(nonatomic,assign) NSInteger comments_count; // 评论数
+/** 转发数 */
+@property(nonatomic,assign) NSInteger reposts_count;
 
-@property(nonatomic,assign) NSInteger attitudes_count; // 表态数
+/** 评论数 */
+@property(nonatomic,assign) NSInteger comments_count;
 
-@property(nonatomic,assign) BOOL isLongText; // 是否是长微博
+/** 表态数 */
+@property(nonatomic,assign) NSInteger attitudes_count;
 
-@property(nonatomic,assign) NSInteger mlevel; // 暂未支持
+/** 是否是长微博 */
+@property(nonatomic,assign) BOOL isLongText;
 
-@property(nonatomic,assign) WBVisible visible; // 微博的可见性及指定可见分组信息。该object中type取值，0：普通微博，1：私密微博，3：指定分组微博，4：密友微博；list_id为分组的组号
+/** 暂未支持 */
+@property(nonatomic,assign) NSInteger mlevel;
+
+/** 微博的可见性及指定可见分组信息。该object中type取值，0：普通微博，1：私密微博，3：指定分组微博，4：密友微博；list_id为分组的组号 */
+@property(nonatomic,assign) WBVisible visible;
 
 @property(nonatomic,assign) NSInteger biz_feature;
 
