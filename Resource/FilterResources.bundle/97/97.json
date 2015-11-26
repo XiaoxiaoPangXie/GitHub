@@ -1,0 +1,12 @@
+{
+    "filtername_zh": "更多贴纸",
+    "filtername_en": "Weibo Camera",
+    "filtername_tw": "更多貼紙",
+    "icon": "filter_icon.png",
+    "isDeletable": "0",
+    "filterid":"97",
+    "vsh": "",
+    "fsh": "",
+    "textures": [
+    ]
+}
