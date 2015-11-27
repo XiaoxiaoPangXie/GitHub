@@ -6,9 +6,6 @@
 //  Copyright (c) 2015年 NSObject. All rights reserved.
 //
 
-/**
- 个人页面
- */
 #import <UIKit/UIKit.h>
 
 @interface WBPersonalViewController : UIViewController

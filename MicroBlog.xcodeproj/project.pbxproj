@@ -39,6 +39,14 @@
 		0F6815911C02BC81000A4E7F /* MicroBlogTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 0F6815901C02BC81000A4E7F /* MicroBlogTests.m */; };
 		0F6815A41C02BDF7000A4E7F /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0F68159E1C02BDF7000A4E7F /* ViewController.m */; };
 		0F6815A51C02BDF7000A4E7F /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 0F6815A21C02BDF7000A4E7F /* AppDelegate.m */; };
+		0F7E51951C07DF7D00540C91 /* WBFavoritesModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 0F7E51941C07DF7D00540C91 /* WBFavoritesModel.m */; };
+		0F7E51981C07DF9B00540C91 /* WBGetInterface+WBGetFavorites.m in Sources */ = {isa = PBXBuildFile; fileRef = 0F7E51971C07DF9B00540C91 /* WBGetInterface+WBGetFavorites.m */; };
+		0F7E519D1C07E09900540C91 /* personal12.png in Resources */ = {isa = PBXBuildFile; fileRef = 0F7E51991C07E09900540C91 /* personal12.png */; };
+		0F7E519E1C07E09900540C91 /* personal13.png in Resources */ = {isa = PBXBuildFile; fileRef = 0F7E519A1C07E09900540C91 /* personal13.png */; };
+		0F7E519F1C07E09900540C91 /* personal14.png in Resources */ = {isa = PBXBuildFile; fileRef = 0F7E519B1C07E09900540C91 /* personal14.png */; };
+		0F7E51A01C07E09900540C91 /* userinfo_membership_level5_selected@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 0F7E519C1C07E09900540C91 /* userinfo_membership_level5_selected@2x.png */; };
+		0F7E51A51C07E0BF00540C91 /* WBPersonalDataTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 0F7E51A21C07E0BF00540C91 /* WBPersonalDataTableViewCell.m */; };
+		0F7E51A61C07E0BF00540C91 /* WBPersonalNameTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 0F7E51A41C07E0BF00540C91 /* WBPersonalNameTableViewCell.m */; };
 		0FBC86961C05AE21006D2616 /* WBGetInterface+WBGetUser.m in Sources */ = {isa = PBXBuildFile; fileRef = 0FBC86951C05AE21006D2616 /* WBGetInterface+WBGetUser.m */; };
 		0FBC86991C05B706006D2616 /* WBGetInterface+WBFriendships.m in Sources */ = {isa = PBXBuildFile; fileRef = 0FBC86981C05B706006D2616 /* WBGetInterface+WBFriendships.m */; };
 		0FBC869C1C05E5AF006D2616 /* WBGetInterface+WBGetAccount.m in Sources */ = {isa = PBXBuildFile; fileRef = 0FBC869B1C05E5AF006D2616 /* WBGetInterface+WBGetAccount.m */; };
@@ -150,6 +158,18 @@
 		0F68159E1C02BDF7000A4E7F /* ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		0F6815A11C02BDF7000A4E7F /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		0F6815A21C02BDF7000A4E7F /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		0F7E51931C07DF7D00540C91 /* WBFavoritesModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = WBFavoritesModel.h; path = MicroBlog/Classes/Model/WBFavoritesModel.h; sourceTree = SOURCE_ROOT; };
+		0F7E51941C07DF7D00540C91 /* WBFavoritesModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = WBFavoritesModel.m; path = MicroBlog/Classes/Model/WBFavoritesModel.m; sourceTree = SOURCE_ROOT; };
+		0F7E51961C07DF9B00540C91 /* WBGetInterface+WBGetFavorites.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "WBGetInterface+WBGetFavorites.h"; sourceTree = "<group>"; };
+		0F7E51971C07DF9B00540C91 /* WBGetInterface+WBGetFavorites.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "WBGetInterface+WBGetFavorites.m"; sourceTree = "<group>"; };
+		0F7E51991C07E09900540C91 /* personal12.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = personal12.png; sourceTree = "<group>"; };
+		0F7E519A1C07E09900540C91 /* personal13.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = personal13.png; sourceTree = "<group>"; };
+		0F7E519B1C07E09900540C91 /* personal14.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = personal14.png; sourceTree = "<group>"; };
+		0F7E519C1C07E09900540C91 /* userinfo_membership_level5_selected@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "userinfo_membership_level5_selected@2x.png"; sourceTree = "<group>"; };
+		0F7E51A11C07E0BF00540C91 /* WBPersonalDataTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WBPersonalDataTableViewCell.h; sourceTree = "<group>"; };
+		0F7E51A21C07E0BF00540C91 /* WBPersonalDataTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WBPersonalDataTableViewCell.m; sourceTree = "<group>"; };
+		0F7E51A31C07E0BF00540C91 /* WBPersonalNameTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WBPersonalNameTableViewCell.h; sourceTree = "<group>"; };
+		0F7E51A41C07E0BF00540C91 /* WBPersonalNameTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WBPersonalNameTableViewCell.m; sourceTree = "<group>"; };
 		0FBC86941C05AE21006D2616 /* WBGetInterface+WBGetUser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "WBGetInterface+WBGetUser.h"; sourceTree = "<group>"; };
 		0FBC86951C05AE21006D2616 /* WBGetInterface+WBGetUser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "WBGetInterface+WBGetUser.m"; sourceTree = "<group>"; };
 		0FBC86971C05B706006D2616 /* WBGetInterface+WBFriendships.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "WBGetInterface+WBFriendships.h"; sourceTree = "<group>"; };
@@ -309,6 +329,8 @@
 				0F5967211C069FAF00B6C3BE /* WBGetInterface+WBGetCommon.m */,
 				0F5967231C06AA2400B6C3BE /* WBGetInterface+WBSearch.h */,
 				0F5967241C06AA2400B6C3BE /* WBGetInterface+WBSearch.m */,
+				0F7E51961C07DF9B00540C91 /* WBGetInterface+WBGetFavorites.h */,
+				0F7E51971C07DF9B00540C91 /* WBGetInterface+WBGetFavorites.m */,
 			);
 			path = API;
 			sourceTree = "<group>";
@@ -352,6 +374,8 @@
 				0FBC86A11C05E611006D2616 /* WBCommentsModel.m */,
 				0F59671D1C0695DB00B6C3BE /* WBRemindModel.h */,
 				0F59671E1C0695DB00B6C3BE /* WBRemindModel.m */,
+				0F7E51931C07DF7D00540C91 /* WBFavoritesModel.h */,
+				0F7E51941C07DF7D00540C91 /* WBFavoritesModel.m */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -370,6 +394,10 @@
 		0F6815A31C02BDF7000A4E7F /* View */ = {
 			isa = PBXGroup;
 			children = (
+				0F7E51A11C07E0BF00540C91 /* WBPersonalDataTableViewCell.h */,
+				0F7E51A21C07E0BF00540C91 /* WBPersonalDataTableViewCell.m */,
+				0F7E51A31C07E0BF00540C91 /* WBPersonalNameTableViewCell.h */,
+				0F7E51A41C07E0BF00540C91 /* WBPersonalNameTableViewCell.m */,
 				0F4A81451C06F80B003653F3 /* WBAdvertisementView.h */,
 				0F4A81461C06F80B003653F3 /* WBAdvertisementView.m */,
 				0F4A81471C06F80B003653F3 /* WBDiscouverTableViewCell.h */,
@@ -402,10 +430,6 @@
 				0FD6719C1C06F898003603B1 /* a3.jpg */,
 				0FD6719D1C06F898003603B1 /* a4.jpg */,
 				0FD6719E1C06F898003603B1 /* discover1.png */,
-				0FD6719F1C06F898003603B1 /* discover10.png */,
-				0FD671A01C06F898003603B1 /* discover11.png */,
-				0FD671A11C06F898003603B1 /* discover12.png */,
-				0FD671A21C06F898003603B1 /* discover13.png */,
 				0FD671A31C06F898003603B1 /* discover2.png */,
 				0FD671A41C06F898003603B1 /* discover3.png */,
 				0FD671A51C06F898003603B1 /* discover4.png */,
@@ -414,11 +438,13 @@
 				0FD671A81C06F898003603B1 /* discover7.png */,
 				0FD671A91C06F898003603B1 /* discover8.png */,
 				0FD671AA1C06F898003603B1 /* discover9.png */,
+				0FD6719F1C06F898003603B1 /* discover10.png */,
+				0FD671A01C06F898003603B1 /* discover11.png */,
+				0FD671A11C06F898003603B1 /* discover12.png */,
+				0FD671A21C06F898003603B1 /* discover13.png */,
 				0FD671AB1C06F898003603B1 /* line1.png */,
 				0FD671AC1C06F898003603B1 /* line2.png */,
 				0FD671AD1C06F898003603B1 /* personal1.png */,
-				0FD671AE1C06F898003603B1 /* personal10.png */,
-				0FD671AF1C06F898003603B1 /* personal11.png */,
 				0FD671B01C06F898003603B1 /* personal2.png */,
 				0FD671B11C06F898003603B1 /* personal3.png */,
 				0FD671B21C06F898003603B1 /* personal4.png */,
@@ -427,8 +453,14 @@
 				0FD671B51C06F898003603B1 /* personal7.png */,
 				0FD671B61C06F898003603B1 /* personal8.png */,
 				0FD671B71C06F898003603B1 /* personal9.png */,
-				0FD671B81C06F898003603B1 /* tabbar_add.png */,
+				0FD671AE1C06F898003603B1 /* personal10.png */,
+				0FD671AF1C06F898003603B1 /* personal11.png */,
+				0F7E51991C07E09900540C91 /* personal12.png */,
+				0F7E519A1C07E09900540C91 /* personal13.png */,
+				0F7E519B1C07E09900540C91 /* personal14.png */,
 				0FD671B91C06F898003603B1 /* tabbar_add_selected.png */,
+				0FD671B81C06F898003603B1 /* tabbar_add.png */,
+				0F7E519C1C07E09900540C91 /* userinfo_membership_level5_selected@2x.png */,
 			);
 			path = picture;
 			sourceTree = "<group>";
@@ -525,6 +557,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				0FD671BF1C06F898003603B1 /* a3.jpg in Resources */,
+				0F7E51A01C07E09900540C91 /* userinfo_membership_level5_selected@2x.png in Resources */,
 				0FD671D31C06F898003603B1 /* personal2.png in Resources */,
 				0FD671C61C06F898003603B1 /* discover2.png in Resources */,
 				0FD671C21C06F898003603B1 /* discover10.png in Resources */,
@@ -536,6 +569,7 @@
 				0FD671D21C06F898003603B1 /* personal11.png in Resources */,
 				0FD671D01C06F898003603B1 /* personal1.png in Resources */,
 				0FD671C31C06F898003603B1 /* discover11.png in Resources */,
+				0F7E519D1C07E09900540C91 /* personal12.png in Resources */,
 				0FD671D41C06F898003603B1 /* personal3.png in Resources */,
 				0F6815801C02BC81000A4E7F /* Main.storyboard in Resources */,
 				0FD671CE1C06F898003603B1 /* line1.png in Resources */,
@@ -565,10 +599,12 @@
 				0FD671BE1C06F898003603B1 /* a2.jpg in Resources */,
 				0F6815821C02BC81000A4E7F /* Images.xcassets in Resources */,
 				0F4A813E1C06F7AC003653F3 /* WBMainViewController.xib in Resources */,
+				0F7E519F1C07E09900540C91 /* personal14.png in Resources */,
 				0FD671D71C06F898003603B1 /* personal6.png in Resources */,
 				0FD671C11C06F898003603B1 /* discover1.png in Resources */,
 				0FD671E31C0728DA003603B1 /* WBStatusTableViewCell.xib in Resources */,
 				0F4A81511C06F80B003653F3 /* WBPersonalTableViewCell.xib in Resources */,
+				0F7E519E1C07E09900540C91 /* personal13.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -588,6 +624,7 @@
 			files = (
 				0F4A813B1C06F7AC003653F3 /* WBDiscoverViewController.m in Sources */,
 				0FBC86A21C05E611006D2616 /* WBCommentsModel.m in Sources */,
+				0F7E51951C07DF7D00540C91 /* WBFavoritesModel.m in Sources */,
 				0F59671C1C06953F00B6C3BE /* WBGetInterface+WBRemind.m in Sources */,
 				0F5967221C069FAF00B6C3BE /* WBGetInterface+WBGetCommon.m in Sources */,
 				0F6815A41C02BDF7000A4E7F /* ViewController.m in Sources */,
@@ -598,6 +635,7 @@
 				0F4A81501C06F80B003653F3 /* WBPersonalTableViewCell.m in Sources */,
 				0F4A81431C06F7AC003653F3 /* WBPersonalViewController.m in Sources */,
 				0F5F21101C03F7F000662D0F /* WBUserModel.m in Sources */,
+				0F7E51A51C07E0BF00540C91 /* WBPersonalDataTableViewCell.m in Sources */,
 				0F6815771C02BC81000A4E7F /* main.m in Sources */,
 				0F4A813F1C06F7AC003653F3 /* WBMoreViewController.m in Sources */,
 				0F6815A51C02BDF7000A4E7F /* AppDelegate.m in Sources */,
@@ -609,7 +647,9 @@
 				0F4A813D1C06F7AC003653F3 /* WBMainViewController.m in Sources */,
 				0F4A814D1C06F80B003653F3 /* WBAdvertisementView.m in Sources */,
 				0FD671E11C0728B3003603B1 /* WBStatusTableViewCell.m in Sources */,
+				0F7E51A61C07E0BF00540C91 /* WBPersonalNameTableViewCell.m in Sources */,
 				0F4A814E1C06F80B003653F3 /* WBDiscouverTableViewCell.m in Sources */,
+				0F7E51981C07DF9B00540C91 /* WBGetInterface+WBGetFavorites.m in Sources */,
 				0F5F213C1C043EBF00662D0F /* WBGetInterface+WBStatuses.m in Sources */,
 				0F20B5FD1C0465CA00C031DE /* WBEmotionsModel.m in Sources */,
 				0FEECB641C0305E40036137E /* WBUser.m in Sources */,

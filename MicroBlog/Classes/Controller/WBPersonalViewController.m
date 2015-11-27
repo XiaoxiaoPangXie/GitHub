@@ -8,6 +8,8 @@
 
 #import "WBPersonalViewController.h"
 #import "WBPersonalTableViewCell.h"
+#import "WBPersonalNameTableViewCell.h"
+#import "WBPersonalDataTableViewCell.h"
 
 @interface WBPersonalViewController ()<UITableViewDataSource,UITableViewDelegate>
 {
@@ -75,24 +77,39 @@
 #pragma mark 组数
 -(NSInteger)numberOfSectionsInTableView:(UITableView *)tableView
 {
-    return 5;
+    return 6;
 }
 
 
 #pragma mark 行数
 -(NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
 {
-   
-    
-        return [[_dataArr objectAtIndex:section]count];
-
+    if (section==0)
+    {
+        return 2;
+    }
+    else
+    {
+        return [[_dataArr objectAtIndex:section-1]count];
+    }
     
 }
 
 #pragma mark 每一行的高度
 -(CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath
 {
-   
+    if (indexPath.section==0)
+    {
+        if (indexPath.row==0)
+        {
+            return 70.0;
+        }
+        else
+        {
+            return 45.0;
+        }
+    }
+    
         return 45.0;
     
 }
@@ -103,19 +120,43 @@
     
    
     static NSString* CellId=@"personalCell";
+    static NSString* CellId1=@"nameCell";
+    static NSString* CellId2=@"dataCell";
     
     UITableViewCell *personalCell=[tableView dequeueReusableCellWithIdentifier:CellId];
+    
+    UITableViewCell *nameCell=[tableView dequeueReusableCellWithIdentifier:CellId1];
+    
+    UITableViewCell *dataCell=[tableView dequeueReusableCellWithIdentifier:CellId2];
     
     if (personalCell==nil)
     {
         
         personalCell=[[WBPersonalTableViewCell alloc]initWithStyle:UITableViewCellStyleDefault reuseIdentifier:CellId];
+        nameCell=[[WBPersonalNameTableViewCell alloc]initWithStyle:UITableViewCellStyleDefault reuseIdentifier:CellId1];
+        
+         dataCell=[[WBPersonalDataTableViewCell alloc]initWithStyle:UITableViewCellStyleDefault reuseIdentifier:CellId2];
     }
     
-    /*
+    
+    if (indexPath.section==0)
+    {
+        if (indexPath.row==0)
+        {
+            nameCell.accessoryType = UITableViewCellAccessoryDisclosureIndicator; //显示最右边的箭头
+            return nameCell;
+        }
+        else
+        {
+            return dataCell;
+        }
+    }
+    
+    
+     /*
        自定义cell部件赋值
      */
-        NSArray*arr=[_dataArr objectAtIndex:indexPath.section];
+        NSArray*arr=[_dataArr objectAtIndex:indexPath.section-1];
         NSDictionary*dic=[arr objectAtIndex:indexPath.row];
         UIImageView *imageView=(UIImageView *)[personalCell viewWithTag:1];
         imageView.image=[UIImage imageNamed:[dic objectForKey:@"imageName"]];
